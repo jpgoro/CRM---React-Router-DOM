@@ -1,0 +1,36 @@
+{
+  "clientes": [
+    {
+      "nombre": "Juan",
+      "empresa": "Code Sur",
+      "email": "juan@juan.com",
+      "telefono": "102013313",
+      "notas": "developer",
+      "id": 1
+    },
+    {
+      "nombre": "Karen",
+      "empresa": "Cimes",
+      "email": "karen@juan.com",
+      "telefono": "138198313",
+      "notas": "Transportista",
+      "id": 2
+    },
+    {
+      "nombre": "Miguel Fuentes",
+      "empresa": "Kleppe",
+      "email": "miguel@juan.com",
+      "telefono": "319381983",
+      "notas": "hola guaton",
+      "id": 4
+    },
+    {
+      "nombre": "Lionel Messi",
+      "empresa": "afa",
+      "email": "afa@afa",
+      "telefono": "123123",
+      "notas": "Anda pa alla bobo",
+      "id": 6
+    }
+  ]
+}

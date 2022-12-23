@@ -11,7 +11,7 @@ function Cliente({ cliente }) {
   const navigate = useNavigate();
   const { nombre, empresa, email, telefono, id } = cliente;
   return (
-    <tr className="border-b">
+    <tr className="border-b  border-slate-200">
       <td className="p-6 space-y-2">
         <p className="text-2xl text-gray-800">{nombre}</p>
         <p>{empresa}</p>
@@ -37,7 +37,7 @@ function Cliente({ cliente }) {
       <td className="p-6 flex gap-3">
         <button
           type="button"
-          className="text-blue-600 hover:text-blue-700 uppercase font-bold text-xs"
+          className="text-indigo-600 hover:text-indigo-900 uppercase font-bold text-xs"
           onClick={() => navigate(`/clientes/${id}/editar`)}>
           Editar
         </button>

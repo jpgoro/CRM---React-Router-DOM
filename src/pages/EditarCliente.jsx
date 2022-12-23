@@ -57,18 +57,18 @@ const errores = useActionData();
 
   return (
     <>
-      <h1 className="font-black text-4xl text-blue-800">Editar Cliente</h1>
+      <h1 className="font-black text-4xl text-indigo-800">Editar Cliente</h1>
       <p className="mt-3">
         Está habilitada la edición del cliente
       </p>
       <div className="flex justify-end">
         <button
-          className="bg-blue-800 text-white px-3 py-1 font-bold uppercase rounded-md"
+          className="bg-indigo-700 text-white px-3 py-1 font-bold uppercase rounded-md"
           onClick={() => navigate(-1)}>
           Volver
         </button>
       </div>
-      <div className="bg-white shadow rounded-md md:w-3/4 mx-auto px-5 py-10 mt-20">
+      <div className="bg-amber-50 shadow rounded-md md:w-3/4 mx-auto px-5 py-10 mt-20">
         {errores?.length &&
           errores.map((error, i) => <Error key={i}>{error}</Error>)}
         <Form method="post" noValidate>
@@ -77,7 +77,7 @@ const errores = useActionData();
 
           <input
             type="submit"
-            className="mt-5 w-full bg-blue-800 p-3 uppercase font-bold text-white text-lg rounded-md"
+            className="mt-5 w-full bg-indigo-700 p-3 uppercase font-bold text-white text-lg rounded-md"
             value="Guardar Cambio"
           />
         </Form>

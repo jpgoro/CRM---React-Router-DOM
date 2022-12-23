@@ -39,18 +39,18 @@ function NuevoCliente() {
   const navigate = useNavigate();
   return (
     <>
-      <h1 className="font-black text-4xl text-blue-800">Nuevo Clientes</h1>
+      <h1 className="font-black text-4xl text-indigo-800">Nuevo Clientes</h1>
       <p className="mt-3">
         Completar todos los campos para registar un nuevo cliente
       </p>
       <div className="flex justify-end">
         <button
-          className="bg-blue-800 text-white rounded-md px-3 py-1 font-bold uppercase"
+          className="bg-indigo-700 text-white rounded-md px-3 py-1 font-bold uppercase"
           onClick={() => navigate(-1)}>
           Volver
         </button>
       </div>
-      <div className="bg-white shadow rounded-md md:w-3/4 mx-auto px-5 py-10 mt-20">
+      <div className=" bg-amber-50 shadow rounded-md md:w-3/4 mx-auto px-5 py-10 mt-20">
         {errores?.length &&
           errores.map((error, i) => <Error key={i}>{error}</Error>)}
         <Form method="post" noValidate>
@@ -58,7 +58,7 @@ function NuevoCliente() {
 
           <input
             type="submit"
-            className="mt-5 w-full bg-blue-800 rounded-md p-3 uppercase font-bold text-white text-lg"
+            className="mt-5 w-full bg-indigo-700 rounded-md p-3 uppercase font-bold text-white text-lg"
             value="Registrar Cliente"
           />
         </Form>
